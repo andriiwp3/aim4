@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import '_colors';
+
+* {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+}
+
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+   display: block;
+}
+
+html,
+body {
+   min-height: 100%;
+   min-width: 320px;
+}
+
+body {
+   line-height: 1;
+   font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+	color: $links;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   vertical-align: top;
+}
+
+svg {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+body {
+   color: $text;
+   font-size: 14px;
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+#root {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: stretch;
+}
