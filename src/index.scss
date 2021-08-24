@@ -58,6 +58,7 @@ input::-ms-clear {
 
 button {
    cursor: pointer;
+	background: none;
 }
 
 button::-moz-focus-inner {
@@ -80,12 +81,12 @@ ul li {
 }
 
 img {
-   max-width: 100%;
+   width: 100%;
    vertical-align: top;
 }
 
 svg {
-	max-width: 100%;
+	width: 100%;
 }
 
 h1,

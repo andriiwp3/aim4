@@ -1,7 +1,7 @@
-import classes from './App.module.css';
+import LeftSidebar from './components/LeftSidebar/LeftSidebar';
 
-function App() {
-   return 'Hello World!'
-}
+const App = () => {
+   return <LeftSidebar />;
+};
 
 export default App;
