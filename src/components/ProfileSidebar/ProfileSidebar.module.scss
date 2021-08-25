@@ -1,0 +1,93 @@
+@import '../../_colors';
+
+.ProfileSidebar {
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: calc(100% - 40px);
+      left: 0;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      background-color: rgba($smalltext, 0.2);
+   }
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0px 0px 30px 0px;
+
+   :global(.title) {
+      margin: 0px 30px 0px 0px;
+   }
+}
+.actions-icons {
+   display: flex;
+   align-items: center;
+   a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      &:not(:last-child) {
+         margin: 0px 10px 0px 0px;
+      }
+   }
+}
+
+.calendar {
+   width: auto;
+   border: none;
+   font-family: inherit;
+   line-height: unset;
+   margin: 0px 0px 30px 0px;
+
+   :global(.react-calendar__tile--now) {
+      background: rgba($main, 0.6);
+   }
+   :global(.react-calendar__tile--active) {
+      background: $links;
+   }
+   :global(.react-calendar__month-view__days__day--weekend) {
+      color: $decor;
+   }
+   :global(.react-calendar__month-view__days__day--neighboringMonth) {
+      color: rgba($smalltext, 0.5);
+   }
+   abbr {
+      text-decoration: none;
+   }
+}
+.tasks {
+   max-height: 144px;
+   overflow-y: auto;
+   /* width */
+   &::-webkit-scrollbar {
+      width: 5px;
+
+      &-track {
+         // box-shadow: inset 0 0 5px grey;
+			border: 1px solid $separators;
+         border-radius: 50px;
+      }
+      &-thumb {
+			position: relative;
+         background:$main;
+         border-radius: 50px;
+      }
+   }
+}
+.task-card {
+   &:not(:last-child) {
+      margin: 0px 0px 15px 0px;
+   }
+}
+
+.row {
+   &:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+   }
+}

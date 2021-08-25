@@ -1,0 +1,30 @@
+@import '../../_colors';
+.UserCard {
+   display: flex;
+   align-items: center;
+}
+
+.avatar {
+   flex: 0 0 70px;
+   margin: 0px 15px 0px 0px;
+   img {
+      border-radius: 50%;
+   }
+}
+.body {
+}
+.title {
+   margin: 0px 0px 2px 0px;
+
+   &__medium {
+      font-weight: 500;
+   }
+   p {
+      font-size: 17px;
+      margin: 0px 0px 10px 0px;
+   }
+}
+.subtitle {
+   font-size: 14px;
+   color: $smalltext;
+}
