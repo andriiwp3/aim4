@@ -4,13 +4,13 @@ import { ReactComponent as PlusSVG } from '../../icons/plus.svg';
 import { ReactComponent as DashboardSVG } from '../../icons/dashboard.svg';
 import { ReactComponent as ClipboardSVG } from '../../icons/clipboard.svg';
 import { ReactComponent as SettingsSVG } from '../../icons/settings.svg';
-import { section as sectionClassName, item as itemClassName } from '../../App.module.scss';
+import appClasses, { section as sectionClassName, item as itemClassName } from '../../App.module.scss';
 import Button from '../UI/Button/Button';
 import classes from './LeftSidebar.module.scss';
 
 const LeftSidebar = props => {
    return (
-      <div className={`${classes.LeftSidebar} ${sectionClassName}`}>
+      <div className={`${classes.LeftSidebar} ${appClasses['left-sidebar']} ${sectionClassName}`}>
          <div className={classes.logo}>
             <div className={classes.logo__icon}>
                <Logo />
