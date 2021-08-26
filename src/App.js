@@ -3,6 +3,7 @@ import LeftSidebar from './components/LeftSidebar/LeftSidebar';
 import Dashboard from './components/Dashboard/Dashboard';
 import ProfileSidebar from './components/ProfileSidebar/ProfileSidebar';
 import appClasses from './App.module.scss'
+import Login from './components/Login/Login';
 
 const App = () => {
    return (
@@ -10,6 +11,9 @@ const App = () => {
          <LeftSidebar />
          <main className={appClasses.main}>
             <Switch>
+               <Route path="/login" exact={true}>
+                  <Login />
+               </Route>
                <Route path="/" exact={true}>
                   <Dashboard />
                </Route>

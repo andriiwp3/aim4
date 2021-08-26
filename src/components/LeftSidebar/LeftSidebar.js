@@ -4,6 +4,7 @@ import { ReactComponent as PlusSVG } from '../../icons/plus.svg';
 import { ReactComponent as DashboardSVG } from '../../icons/dashboard.svg';
 import { ReactComponent as ClipboardSVG } from '../../icons/clipboard.svg';
 import { ReactComponent as SettingsSVG } from '../../icons/settings.svg';
+import { ReactComponent as LoginSVG } from '../../icons/login.svg';
 import appClasses, { section as sectionClassName, item as itemClassName } from '../../App.module.scss';
 import Button from '../UI/Button/Button';
 import classes from './LeftSidebar.module.scss';
@@ -49,6 +50,14 @@ const LeftSidebar = props => {
                         <SettingsSVG fill="#575757" />
                      </div>
                      <span>Settings</span>
+                  </NavLink>
+               </li>
+               <li className={classes.menu__item}>
+                  <NavLink to="/login" exact={true} className={classes.menu__link} activeClassName={classes.active}>
+                     <div className={classes.menu__link__icon}>
+                        <LoginSVG fill="#575757" />
+                     </div>
+                     <span>Login</span>
                   </NavLink>
                </li>
             </ul>
