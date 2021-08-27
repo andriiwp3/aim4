@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../icons/target.svg';
 import { ReactComponent as PlusSVG } from '../../icons/plus.svg';
 import { ReactComponent as DashboardSVG } from '../../icons/dashboard.svg';
@@ -18,14 +18,14 @@ const LeftSidebar = props => {
             </div>
             <span>aim4</span>
          </div>
-         <div className={`${classes['btn-create']} ${itemClassName}`}>
+         <Link to="/tasks" className={`${classes['btn-create']} ${itemClassName}`}>
             <Button>
                <p>Create new task</p>
                <div className={classes['btn-create__icon']}>
                   <PlusSVG />
                </div>
             </Button>
-         </div>
+         </Link>
          <nav className={classes.menu}>
             <ul className={classes.menu__list}>
                <li className={classes.menu__item}>
